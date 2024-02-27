@@ -1,0 +1,83 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Jetbrains Mono Medium;
+    font-size: 14pt;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #1d1f21;
+    color: white;
+}
+
+tooltip {
+  background: #1d1f21;
+  border: 1px solid #327bd1;
+}
+
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: #1d1f21;
+    color: white;
+}
+
+#workspaces button.focused {
+    background: #333333;
+    border-bottom: 2px solid #327bd1;
+}
+
+#workspaces button.active {
+    background: #333333;
+    border-bottom: 2px solid #327bd1;
+}
+
+#pulseaudio {
+	padding-right: 10px
+}
+
+#network {
+	padding-right: 10px
+}
+
+#battery {
+	padding-right: 10px
+}
+
+#battery.warning {
+   color:       rgba(255, 210, 4, 1);
+}
+
+#battery.critical {
+    color:      rgba(238, 46, 36, 1);
+}
+
+#battery.charging {
+    color:      rgba(217, 216, 216, 1);
+}
+#clock {
+	padding-right: 10px
+}
+
+#tray {
+	padding-right: 10px
+}
+@keyframes blink-update {
+	to {
+		background-color: dodgerblue;
+	}
+}
+
+#custom-pacman {
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+#custom-pacman.pending-updates {
+	animation-name: blink-update;
+	animation-duration: 3s;
+}
